@@ -38,8 +38,8 @@ node {
    }
    stage('Build docker image') {
       if (isUnix()) {
-    //     sh "cp Dockerfile /var/lib/jenkins/.m2/repository/com/example/java-maven-junit-helloworld/2.0-SNAPSHOT"
-         sh "docker build -t 519901771307.dkr.ecr.us-west-2.amazonaws.com/reto:v2 /var/lib/jenkins/.m2/repository/com/example/java-maven-junit-helloworld/2.0-SNAPSHOT/"
+    //     sh "cp Dockerfile target"
+         sh "docker build -t 519901771307.dkr.ecr.us-west-2.amazonaws.com/reto:v2 target/"
          
       } 
    }
