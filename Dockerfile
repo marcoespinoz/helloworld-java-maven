@@ -12,6 +12,6 @@ ENV MAVEN_HOME /usr/share/maven
 
 VOLUME /root/.m2
 
-COPY java-maven-junit-helloworld-2.0-SNAPSHOT.jar /home/java-maven-junit-helloworld-2.0-SNAPSHOT.jar
+COPY target/yoodle-5.0.0.jar /home/yoodle-5.0.0.jar
 CMD ["mvn"] 
 CMD ["java","-jar","/home/java-maven-junit-helloworld-2.0-SNAPSHOT.jar"]
