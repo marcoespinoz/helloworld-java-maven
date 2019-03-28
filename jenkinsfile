@@ -38,7 +38,7 @@ node {
    }
    stage('Build docker image') {
       if (isUnix()) {
-    //     sh "cp Dockerfile target"
+    //     sh "cp Dockerfile target/"
          sh "docker build -t 519901771307.dkr.ecr.us-west-2.amazonaws.com/reto:v2 target/"
          
       } 
